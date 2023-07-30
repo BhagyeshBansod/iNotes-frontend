@@ -1,0 +1,18 @@
+.about{
+    margin: 0 2rem;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    backdrop-filter: blur(5px);
+}
+
+.about .about-heading{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.about .about-description{
+    font-size: 1.2rem;
+    text-align: justify;
+}
