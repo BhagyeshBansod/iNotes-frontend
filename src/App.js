@@ -2,7 +2,7 @@ import { RouterProvider } from "react-router-dom";
 import NotesState from "./context/NotesState";
 import { router } from "./Routes/Router";
 
-export const host = "https://inotes-yournotesoncloud.com/";
+export const host = "https://inotes-yournotesoncloud.com";
 
 const App = () => {
   return (
