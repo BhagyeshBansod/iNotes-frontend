@@ -1,5 +1,6 @@
 import { useState } from "react";
 import NotesContext from "./NotesContext";
+import { host } from "../App";
 
 const NotesState = (props) => {
   //initial note value
@@ -7,9 +8,6 @@ const NotesState = (props) => {
 
   //state variable & setState function to manage notes state
   const [allnotes, setAllNotes] = useState(initialNotes);
-
-  //common uri
-  const host = "http://localhost:5000";
 
   //state variable & setState function to manage alert state
   const [alert, setAlert] = useState(null);
