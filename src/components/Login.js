@@ -2,6 +2,7 @@ import React, { useState, useContext } from "react";
 import NotesContext from "../context/NotesContext";
 import { useNavigate } from "react-router-dom";
 import Alert from "./Alert";
+import { host } from "../App";
 
 const Login = () => {
   const notesContext = useContext(NotesContext);
@@ -19,7 +20,7 @@ const Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/api/auth/login", {
+    const response = await fetch(`${host}/api/auth/login`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
