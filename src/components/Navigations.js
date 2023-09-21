@@ -41,15 +41,15 @@ const Navigation = () => {
     {
       path: "/signup",
       name: "Signup",
-      id: 3
+      id: 4
     },
   ];
 
-  const credtab = credTabs.map((cred) => {
+  const credtab = credTabs.map((cred, index) => {
     return (
-      <>
+     
         <Link
-          key={cred.id}
+        key={cred.id}
           to={cred.path}
           className={`${
             cred.name === "Login"
@@ -59,7 +59,6 @@ const Navigation = () => {
         >
           {cred.name}
         </Link>
-      </>
     );
   });
 

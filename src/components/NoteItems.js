@@ -39,7 +39,7 @@ const NoteItems = (props) => {
 
   return (
     <>
-      <div className="flex">
+      <div className="flex" >
         <div className="max-w-xs rounded overflow-hidden shadow-lg bg-white hover:shadow-xl transform transition duration-300 hover:-translate-y-1 mr-4 mb-4">
           <div className="px-6 py-4">
             <div className="flex items-center">
